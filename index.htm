@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Studio - Create & Copy Emojis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="#" class="logo">✨ Emoji Studio</a>
+        <nav>
+            <a href="#library">Emoji Library</a>
+            <a href="#creator">Face Creator</a>
+        </nav>
+    </header>
+
+   
+<section id="creator" class="section creator-section">
+    <h2>Build Your Own Emoji 🎨</h2>
+    <p class="subtitle">Customize every part of your face!</p>
+
+    <div class="creator-box">
+
+        <div class="face-editor">
+            <div id="customFace" class="custom-face">
+                <div id="faceAccessory" class="face-accessory">✨</div>
+                <div id="faceEyebrows" class="face-eyebrows">⌒ ⌒</div>
+                <div id="faceEyes" class="face-eyes">● ●</div>
+                <div id="faceNose" class="face-nose">·</div>
+                <div id="faceMouth" class="face-mouth">◡</div>
+            </div>
+            <p>Your Custom Emoji</p>
+            <button id="copyFace">Copy Face 📋</button>
+        </div>
+
+        <div class="face-controls">
+
+            <h3>Customize Your Face</h3>
+
+            <label>Skin Tone</label>
+            <select id="skinTone">
+                <option value="#ffcc80">Light</option>
+                <option value="#f5b77d">Medium Light</option>
+                <option value="#c68642">Medium</option>
+                <option value="#8d5524">Dark</option>
+                <option value="#5c3830">Deep</option>
+            </select>
+
+            <label>Eyebrows</label>
+            <select id="brows">
+                <option value="⌒ ⌒">Normal</option>
+                <option value="＼ ／">Angry</option>
+                <option value="︶ ︶">Relaxed</option>
+                <option value="⌃ ⌃">Surprised</option>
+            </select>
+
+            <label>Eyes</label>
+            <select id="eyeStyle">
+                <option value="● ●">Normal</option>
+                <option value="♥ ♥">Heart Eyes</option>
+                <option value="◕ ◕">Cute Eyes</option>
+                <option value="◉ ◉">Wide Eyes</option>
+                <option value="— —">Sleepy Eyes</option>
+                <option value="✦ ✦">Star Eyes</option>
+                <option value="× ×">Dizzy Eyes</option>
+            </select>
+
+            <label>Nose</label>
+            <select id="noseStyle">
+                <option value="·">Small</option>
+                <option value="•">Round</option>
+                <option value="▽">Triangle</option>
+                <option value="♥">Heart</option>
+            </select>
+
+            <label>Mouth</label>
+            <select id="mouthStyle">
+                <option value="◡">Smile</option>
+                <option value="ᴗ">Cute Smile</option>
+                <option value="○">Surprised</option>
+                <option value="▽">Open Mouth</option>
+                <option value="﹏">Sad</option>
+                <option value="ω">Cat Smile</option>
+                <option value="︶">Laughing</option>
+                <option value="—">Neutral</option>
+            </select>
+
+            <label>Accessories</label>
+            <select id="faceDecoration">
+                <option value="">None</option>
+                <option value="👑">Crown</option>
+                <option value="🎩">Hat</option>
+                <option value="🕶️">Sunglasses</option>
+                <option value="🎀">Bow</option>
+                <option value="⭐">Star</option>
+                <option value="👓">Glasses</option>
+            </select>
+
+            <button id="randomFace" class="random-btn">
+                🎲 Random Face
+            </button>
+
+            <button id="resetFace" class="random-btn">
+                ↺ Reset Face
+            </button>
+
+        </div>
+    </div>
+</section>
+
+    <main>
+        <section id="library" class="section">
+            <h2>Explore Emoji Library 🎭</h2>
+            <p class="subtitle">Find the perfect emoji for every moment.</p>
+
+            <input type="text" id="search"
+                   placeholder="🔍 Search emojis...">
+
+            <div id="categories" class="categories"></div>
+
+            <div id="emojiGrid" class="emoji-grid"></div>
+
+            <div id="selectedEmoji" class="selected-box">
+                <span id="selectedPreview">😀</span>
+                <p id="selectedName">Select an emoji</p>
+                <button id="copyEmoji">Copy Emoji 📋</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <h3>✨ Emoji Studio</h3>
+        <p>Made with creativity and lots of emojis ❤️</p>
+        <p>© 2026 Emoji Studio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
